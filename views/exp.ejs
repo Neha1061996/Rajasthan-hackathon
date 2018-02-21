@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Competition</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/exp.css">
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+<body>
+	<div class="box w3-container"  >
+		<h1 id="main"><b>WIN TO GET 10% DISCOUNT</b></h1>
+		<form action="discount" method="post">
+		<h2 style="font-family: 'Cuprum', sans-serif;margin-left: 20px;">Q:<%=qno %> : <%=ques%></h2> 
+		<div style="margin-left: 30px;">
+		 <input type="radio" name="vehicle" value="<%=qno%>$<%=op1%>"><span><%=op1%></span><br>
+ 		 <input type="radio" name="vehicle" value="<%=qno%>$<%=op2%>"><span><%=op2%></span><br>
+		 <input type="radio" name="vehicle" value="<%=qno%>$<%=op3%>"><span><%=op3%></span><br>
+ 		 <input type="radio" name="vehicle" value="<%=qno%>$<%=op4%>"><span><%=op4%></span>	<br>
+		</div><br>
+		  <button class="w3-btn w3-white w3-border w3-round-large" style="margin-left: 650px;font-size: 20px;">Next</button>
+		</form>
+	</div>	
+<video width="280" height="240"  autoplay style="margin-left: 10px">
+  <source src="<%=vid%>" type="video/mp4">
+ Your result will be indicated here
+</video>
+<video width="280" height="240"  autoplay style="margin-left: 10px;margin-left: 770px">
+  <source src="<%=vid%>" type="video/mp4">
+ Your result will be indicated here
+</video>
+
+
+
+</body>
+</html>

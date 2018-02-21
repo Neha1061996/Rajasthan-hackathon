@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rajasthan</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/project.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+
+<body>
+<div class="w3-container" style="background-color:#009c9c" >
+		<div class="w3-dropdown-hover" style="margin-left:150px;background-color: #009c9c;">
+			<h2 width="100px">Rajasthan Tourism</h2>
+			</div>
+
+
+		 	<div class="w3-dropdown-hover w3-right"  style="margin-right:150px;">
+		    <button class="w3-button w3-padding-16">Signup</button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		    <form action="signup" method ="post">
+		      <h4>Name:</h4>
+		      <input type="text" name="name" placeholder="Enter your Username" width="100" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Email-Id:</h4>
+		      <input type="email" name="Email" placeholder="Enter Your Email" width="100" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Password:</h4>
+		      <input type="password" name="password" placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <h4>Conform Password:</h4>
+		      <input type="password"  placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <div class="w3-center" style="margin: 5px 0px 5px 0px">
+		      <button class="w3-button w3-ripple w3-teal w3-round " type="submit">Signup</button></div>
+		    </form>
+		    </div>
+		  </div>
+
+	<div class="w3-dropdown-hover w3-right" >
+		    <button class="w3-button w3-padding-16">LogIn</button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		      <form action="login" method="post">
+		      <h4>Email:</h4>
+		      <input type="email" name="Email" placeholder="Enter Your Email" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Password:</h4>
+		      <input type="password" name="password" placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <div class="w3-center" style="margin: 5px 0px 5px 0px">
+		      <button class="w3-button w3-ripple w3-teal w3-round " type="submit">LogIn</button></div>  
+		    </form>
+		    </div>
+		  </div><div class="w3-dropdown-hover w3-right" >
+		    <button class="w3-button w3-padding-16">Packages</button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		   <%for(i in pack){%>
+		    <a href="/<%=pack[i].name%>"><h4><%=pack[i].name%></h4></a>
+		    <%}%></div>
+		</div>
+		
+		  <div class="w3-dropdown-hover w3-right" >
+		    <a href="#traditional"><button class="w3-button w3-padding-16">Traditional</button></a>
+		  
+		    </div>
+		</div>
+
+		</div>
+
+		
+</div>	
+	<div class="w3-display-container w3-white">
+	<img src="https://s4.scoopwhoop.com/anj/kjhkjh/626452379.jpg"   width="100%" height="600px">
+	<div class="w3-display-middle w3-container w3-center"><h1>"Welcome To Rajasthan."</h1>
+		<h4 style="color:#000">"Its palaces and forts are reminders of the many kingdoms that historically vied for the region."</h4>
+		<div class="w3-bar">
+  				<a class="w3-button w3-teal w3-round-xxlarge" href="/pack">View Packages</a>
+  				
+ 				 <button  id="background"  style="margin: 5px"><a href="/discount1">Get 10% Discount</a></button>
+ 				 <a class="w3-button w3-teal w3-round-xxlarge" href="/spack">Student's Packages</a></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<h1 style="text-align: center;">POPULAR PLACES TO VISIT IN RAJASTHAN</h1>
+		<h4 style="text-align: center;">Start Your Planning Today.</h4>
+		<br>
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="https://i.pinimg.com/originals/57/45/04/5745046d89878e2b00da6fc20393ba9b.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Udaipur</h5>
+			        <h4>Lake Pichola & ornet royal places</h4>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="http://scenictoursofindia.com/wp-content/uploads/2016/09/Hawa_Mahal_Final_1-1200x700.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Jaipur</h5>
+			        <h4>"Pink City" & 18th century observatory</h4>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="http://www.travelandlife.fr/wp-content/uploads/2015/09/jaisalmer_lac-1200x700.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Jaisalmer</h5>
+			        <h4>Massive Jaisalmer Fort & Jain Temples</h4>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="http://www.unitedtravelgroup.com/lightbox/117/489590713.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Jodhpur</h5>
+			        <h4>Blue City with palaces & Mehrangarh Fort</h4>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="http://www.designdestinations.org/wp-content/uploads/2011/11/DSC2755-1200x700.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Kota</h5>
+			        <h4>"Education City of India"</h4>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="udaipur">
+			      <img src="http://www.travelandlife.fr/wp-content/uploads/2015/09/chittorgarth-1200x700.jpg" style="width:100%" class="w3-hover-sepia"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Chittorgarh</h5>
+			        <h4>Massive, historic Fort complex</h4>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<br>
+			<br><br><br><br>
+	
+			<div class="w3-row">
+			  <div class="w3-col s4 w3-white w3-center">
+			  <h1 style="font-size: 90px;text-align: left;" class="quotes">Promote</h1>
+					<h1 style="text-align: left;"><b>Your's</b></h1>
+				<h1 style="font-size: 90px;text-align: left;" class="quotes" >Locality</h1>
+					<h1 style="text-align: left;"><b>To Be a</b></h1>
+				<h1 style="font-size: 90px;text-align: left;" class="quotes">Tourist Location.</h1>
+				</div>
+					<div class="w3-col s8 w3-black w3-center w3-round ">
+						<h1 class="white">PEOPLE</h1>
+						<h1 class="white">Don't Take</h1>
+						<h1 class="white" style="margin-bottom: -10px;">TRIPS</h1>
+						<p style="line-height: 0px">___________________</p>
+						<h1 class="white">TRIPS</h1>
+						<h1 class="white">TAKE</h1>
+						<h1 class="white">PEOPLE</h1>
+			</div></div>
+			<div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+				  <h2><i>Submit Details To Promote</i></h2>
+				  <h3><b>Contact at Email :</b> ankeshnayak07jan@gmail.com</h3>
+				  <p>You can get a chance to work with Goverment</p>
+			</div>
+			
+		<br>
+		<br>
+		<br>
+		<br>
+	<br>
+				  </div>
+</div></div></div>
+
+
+</div><div class="container">	
+<h1 style="text-align: center;">POPULAR THINGS TO DO IN RAJASTHAN</h1>
+			<h4 style="text-align: center;">Start Your Enjoyment Today.</h4>
+				<br>
+				<div class="w3-row-padding w3-margin-top">
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="http://lifestylepubs.wordpress.s3-us-west-2.amazonaws.com/app/uploads/prod/2016/10/BalloonsWide.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >Hot Air Ballooning </h4> 
+				         
+				      </div>
+				    </div>
+				  </div>
+
+				 <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="http://www.azalaidesertlodge.fr/diapo/campement/environnement04.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >Desert Camping</h4>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/915/91551711.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >Dine at Chokhi Dhani</h4>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="w3-row-padding w3-margin-top">
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="https://www.amalgamcollection.com/wp-content/uploads/2015/04/2015-03-18-18.46.33-1200x700.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >Vintage Car Rally</h4>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="https://mekongeye.n.openearth.net/wp-content/uploads/sites/2/2017/09/cover_1.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >A rendezvous with the wildlife</h4>
+						</div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="https://www.fishandfeathers.travel/wp-content/uploads/20090409_5977.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h4  class=" w3-center" >Go trekking </h4>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			
+				  <br>
+				  <br>
+				  <br>
+				  <br>
+  
+		<h1 style="text-align: center;" id="traditional">TRADITIONAL THINGS IN RAJASTHAN</h1>
+			<h4 style="text-align: center;">Shop Now...!!!</h4>
+				<br>
+					<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/jwel">
+			      <img src="https://i0.wp.com/www.peerlessarray.com/wp-content/uploads/2016/10/KJ-20160921-23.jpg?fit=1200%2C700&ssl=1" style="width:100%" class="w3-hover-opacity"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Jewellery and Gemstones</h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/paint">
+			      <img src="http://www.handicraftsindia.org/wp-content/uploads/2010/05/madhubani-painting-1200x700.jpg" style="width:100%" class="w3-hover-opacity"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Painting</h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/carp">
+			      <img src="https://kabalan.com/wp-content/grand-media/image/02_Kabala_1200x700.jpg" style="width:100%" class="w3-hover-opacity"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Carpet</h5>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/poter">
+			      <img src="http://lifestylepubs.wordpress.s3-us-west-2.amazonaws.com/app/uploads/prod/2017/05/SM6A8460-1200x700.jpg" style="width:100%" class="w3-hover-opacity"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Pottery</h5>
+			       
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/fab">
+			      <img src="https://www.theartofed.com/content/uploads/2017/08/IMG_4306-1200x700.jpg" style="width:100%" class="w3-hover-opacity"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Fabric Work</h5>
+		
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card"><a href="/pup">
+			      <img src="https://c1.staticflickr.com/6/5284/5329742119_bec98bc2be_b.jpg" style="width:100%" class="w3-hover-opacity" height="210px"></a>
+			      <div class="w3-container w3-center">
+			        <h5>Puppets</h5>
+  </div>
+			    </div>
+			  </div>
+			</div>
+</div>
+</br>
+
+		<div class="footer-inner">
+			<div class="main">
+	<div class="copy"><h4>&copy NR-MAK</h4></div>
+</div>
+			
+			
+			<div class="footer-box" >
+				<h5>Find us on</h5>
+				<ul>
+			<li><a href="#"><i class="fa fa-google"></i> Google  </a> <a href="#"><i class="fa fa-instagram" style="margin-left: 10px"></i> Instagram</a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i> Twitter  </a> <a href="#"><i class="fa fa-youtube" style="margin-left: 10px"></i> youtube</a> </li>
+					<li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+					
+				</ul>
+			
+			</div>
+			<div class="footer-box">
+			<h5>About this site</h5>
+			<ul>
+				<li>Sitemap</li>
+				<li>Privacy Policy</li>
+				<li>Terms and Conditions</li>
+			</ul>
+		</div>
+		<div class="footer-box">
+			<h5>Other sites</h5>
+			<ul>
+				<li>Media & Industry</li>
+				<li>Relative Events</li>
+
+			</ul>
+		</div>
+			<div class="footer-box" >
+				<a href="/try"><h5>FeedBack</h5></a>
+			</div>
+		
+	</div>
+	
+
+
+<script>
+
+var i = 0;
+function change() {
+  var doc = document.getElementById("background");
+  var color = [ "blue", "brown", "green"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
+
+
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>					
+</body>
+</html>

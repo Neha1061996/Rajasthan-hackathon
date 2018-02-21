@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Pannel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+	<div class="container jumbotron">
+			<h1 style="text-align: center; background-color: #009c9c;">ADMIN</h1>
+		<br>
+		<br>
+	
+	    <h2 style="text-align: center"><u>Add Hotel/Bus/Touriest Places</u></h2>
+	    <form action="upload" method="post" enctype="multipart/form-data">
+  	<h3>Upload:</h3><input type="file" name="upload">
+  	<button type="submit" class="w3-button w3-teal w3-round-large" id="sub">upload</button>
+     </form>
+  	<br><br>
+  	<hr/>
+  	<form action="uadd" method="post">
+  	<br>
+  	
+  	<br>
+
+  	<h3>Category:</h3>
+  	
+  		<select name="category">
+ 			<option value="Hotel">Hotel</option>
+  			<option value="Bus">Bus</option>
+  			<option value="Touriest Place">Touriest Place</option>
+  		</select>
+  	
+  	<h3>Name:</h3>
+  	<input type="text" name="name" placeholder="Enter name" class="inp" required>
+  	<h3>Description:</h3>
+  	<textarea class="inp" name="description" rows="5" cols="70" placeholder="Enter Your Description" required></textarea> 
+  	<h3>Image Name:</h3>
+  	<input type="text" name="image" placeholder="same as file to be uploaded" class="inp" required>
+  		<button type="submit" class="w3-button w3-teal w3-round-large" id="sub">Submit</button>
+
+  	</form>
+<br><br><br>
+  	<hr/>
+  
+
+
+</div>
+
+ 
+
+</body>
+</html>

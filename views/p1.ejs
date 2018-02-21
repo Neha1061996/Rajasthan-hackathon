@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Package</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+<body  ><div  style="background-color: #1004" class="w3-container">
+					<div class="w3-container w3-teal" >
+			  <h1><%=mt.name%>
+			  	<button class="w3-button w3-right w3-round w3-teal w3-border w3-hover-red" style="font-size: 21px">Book</button>
+			  </h1>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src=<%=mt.hurl%> style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=mt.hotel%></h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src=<%=mt.burl%> style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=mt.bus%></h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src=<%=mt.turl%> style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=mt.tour%></h5>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="w3-container">
+			  <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-amber">
+			    <h5 style="display: inline-block;">Duration: <%=mt.dur%>Days<br/></br>Cost: <%=mt.cost%></h5>
+			  </div>
+			</div>
+			
+</div>
+
+</body>
+</html>

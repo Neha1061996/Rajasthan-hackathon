@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin2 Pannel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+	  <div class="container jumbotron">
+		<h1 style="text-align: center; background-color: #009c9c;">ADMIN</h1>
+		<br>
+		<br>
+		<h2 style="text-align: center"><u>Create Packages</u></h2>
+    
+  <form   action="Package" method="post">
+
+	<h3>Add Hotel:</h3>
+<input type="text" name="hotel" placeholder="Enter Hotel name" class="inp" required>
+    <h3>Add Hotel image url:</h3>
+<input type="text" name="hurl" placeholder="Add hotel image" class="inp" required>
+    
+  		
+  	<h3>Add Bus:</h3>
+    <input type="text" name="bus" placeholder="Enter Bus name" class="inp" required>
+    <h3>Add Bus image url:</h3>
+<input type="text" name="burl" placeholder="Add Bus image " class="inp" required>
+    
+   
+	   <h3>Add Tourist Place:</h3>
+     <input type="text" name="tour" placeholder="Enter name" class="inp" required>
+    <h3>Add Tour Location url:</h3>
+<input type="text" name="turl" placeholder="Add Tour Url" class="inp" required>
+    
+  	 
+  	<h3>Package Name:</h3>
+  	<input type="text" name="name" placeholder="Enter name" class="inp" required>
+  	<h3>Package Duration(days):</h3>
+  	<input type="number" name="dur" placeholder="Duration In Days" class="inp" min="1" max="20" required>
+  	<h3>Add Video Link:</h3><input type="text" name="upload" class="inp" placeholder="Video Link" required>
+  	<h3>Total Cost:</h3>
+  	<input type="number" name="cost" placeholder="Rupees" class="inp" min="0" required>
+  	<br>
+  	<button type="submit" class="w3-button w3-teal w3-round-large" id="sub">Submit</button>
+  	</form><br>
+  	<br>
+</div>		
+</body>
+</html>

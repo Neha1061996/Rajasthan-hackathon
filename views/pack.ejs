@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Packages</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/packa.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+</head>
+<body>
+	<div class="w3-container" style="background-color:#009c9c" >
+		<div class="w3-dropdown-hover" style="margin-left:150px;background-color: #009c9c;">
+			<h2 width="100px">Rajasthan Tourism</h2>
+			</div>
+		 	<div class="w3-dropdown-hover w3-right"  style="margin-right:150px;">
+		    <button class="w3-button w3-padding-16">Signup</button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		      <h4>Name:</h4>
+		      <input type="text" name="name" placeholder="Enter your Username" width="100" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Email-Id:</h4>
+		      <input type="email" name="Email" placeholder="Enter Your Email" width="100" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Password:</h4>
+		      <input type="password" name="password" placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <h4>Conform Password:</h4>
+		      <input type="password" name="password" placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <div class="w3-center" style="margin: 5px 0px 5px 0px">
+		      <button class="w3-button w3-ripple w3-teal w3-round ">Signup</button></div>
+		    </div>
+		  </div>
+
+	<div class="w3-dropdown-hover w3-right" >
+		    <button class="w3-button w3-padding-16">LogIn</button>
+		    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		      <h4>Email:</h4>
+		      <input type="email" name="Email" placeholder="Enter Your Email" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black; " required>
+		      <h4>Password:</h4>
+		      <input type="password" name="password" placeholder="*********" width="100px" style="margin:0px 7px 0px 7px;border:none;border-bottom:2px solid black;" required>
+		      <div class="w3-center" style="margin: 5px 0px 5px 0px">
+		      <button class="w3-button w3-ripple w3-teal w3-round ">LogIn</button></div>  
+		    </div>
+		  </div>
+		  </div>
+		
+		<br>
+		<%for(i in result){%>
+		<div class="container">
+					
+					<div class="w3-container w3-teal">
+			  <h1><%=result[i].name%>
+			  	<button class="w3-button w3-right w3-round w3-teal w3-border w3-hover-red" style="font-size: 21px"> <a href="https://www.payumoney.com/paybypayumoney/#/887F59FFF4DAF0AAEE696DE230FBAFA2">
+ Book</a></button>
+			  </h1>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src="<%=result[i].hurl%>" style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=result[i].hotel%></h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src="<%=result[i].burl%>" style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=result[i].bus%></h5>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="w3-third">
+			    <div class="w3-card">
+			      <img src="<%=result[i].turl%>" style="width:100%">
+			      <div class="w3-container">
+			        <h5><%=result[i].tour%></h5>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="w3-container">
+			  <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-amber">
+			    <h5 style="display: inline-block;">Duration : <%=result[i].dur%><br/><br/>Fare : <%=result[i].cost%></span></h5>
+			  </div>
+			
+			</div>  
+			
+</div><%}%>
+
+</body>
+</html>

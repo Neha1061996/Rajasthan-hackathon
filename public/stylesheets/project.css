@@ -1,0 +1,19 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+h4,h2{
+	font-family: 'Cuprum', sans-serif;
+}
+h1{
+	color: #000;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 60px;
+}
+.quotes{
+	line-height: 70px;
+}
+.white{
+	color:#fff;
+}
